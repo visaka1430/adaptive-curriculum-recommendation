@@ -1,0 +1,4 @@
+PyMuPDF>=1.23.0
+pandas>=2.0.0
+pytrends>=4.9.0
+reportlab>=4.0.0
