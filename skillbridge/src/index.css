@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-headline {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Float Animations for Empty State Illustrations */
+@keyframes floatCert {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+.float-cert {
+  animation: floatCert 3.5s ease-in-out infinite;
+}
+
+@keyframes floatRocket {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-5px) rotate(1.5deg); }
+}
+.float-rocket {
+  animation: floatRocket 3.8s ease-in-out infinite;
+}
+
+@keyframes floatTrophy {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+.float-trophy {
+  animation: floatTrophy 3.4s ease-in-out infinite;
+}
+
+@keyframes floatBook {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+.float-book {
+  animation: floatBook 3.6s ease-in-out infinite;
+}
+
+@keyframes floatPuzzle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-4px) rotate(-1deg); }
+}
+.float-puzzle {
+  animation: floatPuzzle 3.3s ease-in-out infinite;
+}
+
+@keyframes floatCalendar {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+.float-cal {
+  animation: floatCalendar 3.7s ease-in-out infinite;
+}
+
+@keyframes floatGrand {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+.float-grand {
+  animation: floatGrand 3.5s ease-in-out infinite;
+}
+
+/* Material Symbols sizing helper */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  vertical-align: middle;
+}
+
+.material-symbols-outlined.fill-icon {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+/* Custom ring utility for focus-within */
+.custom-ring:focus-within {
+  border-color: #FF6F61;
+  box-shadow: 0 0 0 3px rgba(255, 111, 97, 0.2);
+}

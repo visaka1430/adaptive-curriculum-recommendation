@@ -1,0 +1,6 @@
+{
+  "name": "SkillBridge EdTech - Job Market Readiness & Verified Credentials",
+  "description": "Enterprise-grade academic portfolio, credential verification, zero-data design patterns, and institutional onboarding portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
