@@ -20,10 +20,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[3]
 ADZUNA_SEARCH_URL = "https://api.adzuna.com/v1/api/jobs/{country}/search/{page}"
 REMOTEOK_API_URL = "https://remoteok.com/api"
 
-
 class JobAPIError(RuntimeError):
     """Raised when a job-posting source returns an unrecoverable error."""
-
 
 def _load_config(config_path: str = "config/config.yaml") -> dict:
     defaults = {
@@ -57,11 +55,7 @@ def _get_adzuna_credentials() -> tuple[str, str]:
         )
     return app_id, app_key
 
-
-# ---------------------------------------------------------------------------
-# Adzuna
-# ---------------------------------------------------------------------------
-
+#ADZUNA 
 
 def fetch_adzuna_jobs(
     query: str = "software engineer",
@@ -151,12 +145,7 @@ def normalize_remoteok_job(raw_job: dict) -> dict:
         "url": raw_job.get("url", ""),
         "created": raw_job.get("date", ""),
     }
-
-
-# ---------------------------------------------------------------------------
-# Combined pipeline
-# ---------------------------------------------------------------------------
-
+#---combined pipeline
 
 def build_job_postings_snapshot(config_path: str = "config/config.yaml") -> dict:
     config = _load_config(config_path)
